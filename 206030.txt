@@ -1,0 +1,114 @@
+
+	//206030-Aleksandar Tasevski  Lab-1   SI
+
+
+4.	За да направам локален директориум и да го иницијализирам Git искористив:
+	
+	- Во cmd promt mkdir SI_2023_lab1_206030
+	- cd SI_2023_lab1_206030
+	- git init
+
+5.	За да го поврзам локалниот со оддалечениот репозиториум искористив:
+
+	- git remote add origin https://github.com/atasevski/SI_2023_lab1_206030.git
+
+6.	Додавањето на фајлот го направив со:
+	
+	- echo "Aleksandar Tasevski 206030" >> README.md
+
+7.	За фајлот SIlab1.java  искористив:
+
+	- echo >> SILab1.java
+	- notepad SILab1.java (каде ја ставив содржината како што беше побарано)
+	- git add SILab1.java
+	- git commit -m "Add Java Class"
+
+8.	За синхронизација употребив:
+
+	- git push -u origin master
+
+9.	За да отворам 3 нови гранки ги извршив следниве команди:
+
+	-git checkout master
+	-git branch bug1
+	-git branch bug2
+	-git branch bug3
+
+10.	-git checkout bug1
+
+11.	Ја поправив грешката, по извршување на git status се уверив дека сум на bug1 и извршив  git add SILab1.java
+	и направив commit со соодветната порака (-git commit -m "Fix wrong loop for reading")
+
+12.	-git checkout bug2
+
+13.	Исто како и претходно ја поправив грешката го додадов фајлот и направив commit.
+	
+	-git add SILab1.java
+	-git commit -m "Fix wrong condition in filterOddNumbers" 
+
+14.	-git checkout bug3
+
+15.	После поправента грешка...
+
+	-git add SILab1.java
+	-git commit -m "Fix method sumEvenNumbers"
+
+16.	За да ги синхронизирам сите гранки искористив:
+
+	-git push -u origin master
+	-git push origin bug1
+	-git push origin bug2
+	-git push origin bug3
+
+17.	-git checkout master
+
+18.	-git merge bug1
+
+19.	-git push -u origin master
+	-git push origin bug1
+	-git push origin bug2
+	-git push origin bug3
+
+20.	-git merge bug2
+
+21.	-git push -u origin master
+	-git push origin bug1
+	-git push origin bug2
+	-git push origin bug3
+
+22.	-git checkout bug3
+
+23.	-git rebase master (се изврши успешно)!
+
+24.	-git checkout master
+
+25.	-git merge bug3
+
+26.	-git push -u origin master
+	-git push origin bug1
+	-git push origin bug2
+	-git push --force origin bug3
+
+	ЗАБЕЛЕШКА: При командата -git push origin bug3 
+
+	C:\Users\pkkom\Documents\SI_2023_lab1_206030>git push origin bug3
+	To https://github.com/atasevski/SI_2023_lab1_206030.git
+ 	! [rejected]        bug3 -> bug3 (non-fast-forward)
+	error: failed to push some refs to 'https://github.com/atasevski/SI_2023_lab1_206030.git'
+	hint: Updates were rejected because a pushed branch tip is behind its remote
+	hint: counterpart. Check out this branch and integrate the remote changes
+	hint: (e.g. 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+27.	-echo >> logs.txt (по што во дадотеката ја ставам содржината од командата git log)
+	-git add logs.txt
+	-echo >> 206030.txt (по што ја внесувам водената документација)
+	-git add 206030.txt
+	-git commit -m "Final commit"
+
+28.	-git push -u origin master
+	-git push origin bug1
+	-git push origin bug2
+	-git push origin bug3
+
+	

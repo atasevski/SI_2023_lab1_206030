@@ -1,0 +1,28 @@
+commit c1dc6da62d3f937fee22fd83eea64bb117345882 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: atasevski <atasevski607@gmail.com>
+Date:   Sun Apr 9 18:33:46 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit b3cf2a2d120326a20834ad827576d45cda4262ee
+Merge: b76127b 6609f3d
+Author: atasevski <atasevski607@gmail.com>
+Date:   Sun Apr 9 18:46:22 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 6609f3dfdfb5e2e5960244ef41ee1a34a9d85ed0 (origin/bug2, bug2)
+Author: atasevski <atasevski607@gmail.com>
+Date:   Sun Apr 9 18:27:55 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit b76127b3cc5f7910214f1ac13304cf21486633f4 (origin/bug1, bug1)
+Author: atasevski <atasevski607@gmail.com>
+Date:   Sun Apr 9 18:21:04 2023 +0200
+
+    Fix wrong loop for reading
+
+commit f3ee9ffa113616199636f6cc01f682a73f0cb418
+Author: atasevski <atasevski607@gmail.com>
+Date:   Sun Apr 9 17:04:55 2023 +0200
